@@ -84,4 +84,4 @@ int score(Plateau plateauV);
  */
 bool contientun0( Plateau plateau);
 
-//salut mec
+//salut mec hey
