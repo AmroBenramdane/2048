@@ -83,5 +83,3 @@ int score(Plateau plateauV);
  * @return return true si oui sinon false
  */
 bool contientun0( Plateau plateau);
-
-//salut
