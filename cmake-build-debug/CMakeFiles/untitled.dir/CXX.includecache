@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/amrobenramdane/CLionProjects/2048/Projet_ncurses.cpp
+modele.h
+/Users/amrobenramdane/CLionProjects/2048/modele.h
+
+/Users/amrobenramdane/CLionProjects/2048/modele.h
+vector
+-
+ncurses.h
+-
+string
+-
+math.h
+-
+stdlib.h
+-
+
+/Users/amrobenramdane/CLionProjects/2048/projet-main.cpp
+modele.h
+/Users/amrobenramdane/CLionProjects/2048/modele.h
+
