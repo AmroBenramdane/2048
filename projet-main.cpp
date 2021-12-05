@@ -9,6 +9,7 @@ int main() {
         init_pair(10, COLOR_YELLOW , COLOR_BLACK );
         keypad(stdscr, TRUE);
         int compteur = 0;
+        int compteurfin = 0;
         Plateau t;
         t = plateauInitial();
         for (auto i: t) {
@@ -29,8 +30,8 @@ int main() {
         }
         refresh();
         while (not estTermine(t)) {
-            clear();
-            if(estGagnant(t)){
+            if(estGagnant(t)){compteurfin++;}
+            if(estGagnant(t) and compteurfin == 1){
                 printw("2048 :) !!, voulez-vous continuer ?(y/n)");
                 dessine(t);
                 int d = getch();
@@ -41,11 +42,13 @@ int main() {
                         continue;
                     }
                     if (d == 'n') {
+                        clear();
                         return 0;
                     }
                 }
                 refresh();
             }
+            clear();
             int verif = 0;
             printw("            score: ");
             printw((to_string(score(t) - 4 * compteur)).c_str(), "\n");
@@ -104,7 +107,7 @@ int main() {
             }
             t = t2;
         }
-        if (estTermine(t) and not estGagnant(t)) {
+        if (estTermine(t) ) {
             clear();
             printw("vous avez perdu :( , voulez-vous rejouer ?(y/n)");
             dessine(t);
