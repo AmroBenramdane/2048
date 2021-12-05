@@ -30,9 +30,9 @@ int main() {
         }
         refresh();
         while (not estTermine(t)) {
-            clear();
             if(estGagnant(t)){compteurfin++;}
             if(estGagnant(t) and compteurfin == 1){
+                clear();
                 printw("2048 :) !!, voulez-vous continuer ?(y/n)");
                 dessine(t);
                 int d = getch();
