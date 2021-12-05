@@ -30,6 +30,7 @@ int main() {
         }
         refresh();
         while (not estTermine(t)) {
+            clear();
             if(estGagnant(t)){compteurfin++;}
             if(estGagnant(t) and compteurfin == 1){
                 printw("2048 :) !!, voulez-vous continuer ?(y/n)");
@@ -38,7 +39,6 @@ int main() {
                 while( d != 'y' and d != 'n') {
                     d = getch();
                     if (d == 'y') {
-                        clear();
                         continue;
                     }
                     if (d == 'n') {
