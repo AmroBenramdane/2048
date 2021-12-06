@@ -27,7 +27,6 @@ int tireDeuxOuQuatre() {
         proba[i] = 2;
     }
     proba[9] = 4;
-    srand(time(0));
     int ind = rand() % 10;
     return proba[ind];
 
@@ -38,7 +37,6 @@ int tireDeuxOuQuatre() {
 
 Plateau plateauInitial() {
     Plateau plateau = plateauVide();
-    srand(time(0));
     int a = rand() % 4;
     int b = rand() % 4;
     plateau[a][b] = tireDeuxOuQuatre();
@@ -48,7 +46,6 @@ Plateau plateauInitial() {
         c = rand() % 4;
         d = rand() % 4;
     }
-    srand(time(0));
     plateau[c][d] = tireDeuxOuQuatre();
     return plateau;
 }

@@ -4,6 +4,7 @@ using namespace std;
 int main() {
     bool jeu = true;
     while(jeu == true) {
+        srand(time(0));
         initscr();
         start_color();
         init_pair(10, COLOR_YELLOW , COLOR_BLACK );
