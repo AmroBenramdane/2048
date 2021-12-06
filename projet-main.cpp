@@ -58,6 +58,7 @@ int main() {
             c = getch();
             if (c == 'e') {
                 refresh();
+                endwin();
                 return 0;
             }
             t2 = deplacement(t, c);
@@ -129,5 +130,6 @@ int main() {
         }
 
     }
+    endwin();
     return 0;
 }
