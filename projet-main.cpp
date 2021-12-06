@@ -44,6 +44,7 @@ int main() {
                     }
                     if (d == 'n') {
                         clear();
+                        endwin();
                         return 0;
                     }
                 }
